@@ -1,25 +1,25 @@
 class VimShapes < Formula
   desc "architecture diagrams, driven like vim — a terminal diagramming tool with an ontology under it"
   homepage "https://github.com/currently-unnamed/vim-shapes"
-  version "0.1.4"
+  version "0.1.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.4/vim-shapes-aarch64-apple-darwin.tar.xz"
-      sha256 "0c3b7200b9eb321a077a84a1867c0e14d42e19222429dd90b27a7f23e4c68fd5"
+      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.5/vim-shapes-aarch64-apple-darwin.tar.xz"
+      sha256 "72ec4293ceca911e65121b88fbb49e507b2f7cce5e80404e8f48ec4826e9ec15"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.4/vim-shapes-x86_64-apple-darwin.tar.xz"
-      sha256 "48ec684e1ff200d3f5519197a1e181a0f82cec69742b8999c718d87e03139fed"
+      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.5/vim-shapes-x86_64-apple-darwin.tar.xz"
+      sha256 "31ff504a7c47f3c91119e165f8d57f53cc34e89cb9e7ed32c27b6b3719f19dc2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.4/vim-shapes-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "236487111003e85f57cec2567c069f9a46b650fa087d077b6b816337dc2bb37a"
+      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.5/vim-shapes-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d2c4a5810dc6ac0e78fd38b9aee47da813e6df39a1ea5c26072f688d25384147"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.4/vim-shapes-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2661027f170f17d57addc45a489505cb8de8b00c65401f1698df54860873d981"
+      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.5/vim-shapes-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "40cb6a31d2db3c9c02a216ad04cc8999c546ef0d28059854db3228ee851c51d6"
     end
   end
   license "MIT"
