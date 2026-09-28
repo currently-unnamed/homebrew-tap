@@ -1,25 +1,25 @@
 class VimShapes < Formula
   desc "architecture diagrams, driven like vim — a terminal diagramming tool with an ontology under it"
   homepage "https://github.com/currently-unnamed/vim-shapes"
-  version "0.1.5"
+  version "0.1.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.5/vim-shapes-aarch64-apple-darwin.tar.xz"
-      sha256 "72ec4293ceca911e65121b88fbb49e507b2f7cce5e80404e8f48ec4826e9ec15"
+      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.6/vim-shapes-aarch64-apple-darwin.tar.xz"
+      sha256 "b152dcaee7547b7cf0da855af14cb1de23985f89e98492d6447615e5390053a7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.5/vim-shapes-x86_64-apple-darwin.tar.xz"
-      sha256 "31ff504a7c47f3c91119e165f8d57f53cc34e89cb9e7ed32c27b6b3719f19dc2"
+      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.6/vim-shapes-x86_64-apple-darwin.tar.xz"
+      sha256 "6225b9f787aba4140dbe98e8e0c2cddec6f870d5f125a9b101cbcb27ae6925ac"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.5/vim-shapes-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d2c4a5810dc6ac0e78fd38b9aee47da813e6df39a1ea5c26072f688d25384147"
+      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.6/vim-shapes-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c2cf055ab875560685914c5acfc6244a23baa2f478d11f458c647990e2307343"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.5/vim-shapes-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "40cb6a31d2db3c9c02a216ad04cc8999c546ef0d28059854db3228ee851c51d6"
+      url "https://github.com/currently-unnamed/vim-shapes/releases/download/v0.1.6/vim-shapes-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "37a267dff2443cad8c99810feecc3a83e0baa0b48eac64f4f5e85202becb7314"
     end
   end
   license "MIT"
@@ -28,6 +28,7 @@ class VimShapes < Formula
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
